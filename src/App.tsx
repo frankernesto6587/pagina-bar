@@ -12,12 +12,13 @@ import { Contact } from "./components/Contact";
 import Footer from "./components/Footer";
 
 
+
 function App() {
   useEffect(() => {
     const headerScrolled = () => {
       const selectHeader = document.querySelector('#header');
       const selectTopbar = document.querySelector('#topbar');
-      
+
       if (selectHeader) {
         console.log(window.scrollY + 'px');
         if (window.scrollY > 100) {
@@ -40,26 +41,27 @@ function App() {
     return () => {
       window.removeEventListener('load', headerScrolled);
       window.removeEventListener('scroll', headerScrolled);
-    };}, []); 
+    };
+  }, []);
   return (
     <>
-      <NavBar cel="+58638862"/>
+      <NavBar cel="+58638862" />
       <Hero />
       <main id="main">
-        <About/>
-        <WhyUs/>
-        <Menu/>
-       <Specials/>
-       <Events/>
-       <Gallery/>
-       <Contact/>
-       <Footer/>
-           
+        <About />
+        <WhyUs />
+        <Menu />
+        <Specials />
+        <Events />
+        <Gallery />
+        <Contact />
+        <Footer />
+
       </main>
 
-    
 
-     
+
+
     </>
   )
 }
