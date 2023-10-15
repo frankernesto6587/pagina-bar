@@ -17,15 +17,10 @@ export interface Producto {
   description: string;
   list_price: number;
 }
-export interface Subcategoria {
-  id: number;
-  nombre: string;
-  productos: Producto[];
-}
 export interface Categoria {
   id: number;
   nombre: string;
-  subcategorias: Subcategoria[];
+  productos: Producto[];
 }
 
 
