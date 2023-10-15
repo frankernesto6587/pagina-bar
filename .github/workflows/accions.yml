@@ -1,0 +1,32 @@
+name: deploy pagina bar
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  build_api:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      #- name: Install Node.js
+      #  uses: actions/setup-node@v3
+      #  with:
+      #    node-version: 18
+
+      #- uses: pnpm/action-setup@v2
+      #  name: Install pnpm
+      #  with:
+      #    version: 8
+      #    run_install: false
+
+      - name: Dependencias
+        run: pnpm i
+
+      - name: Compilar
+        run: pnpm build
+
