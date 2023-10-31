@@ -121,6 +121,7 @@
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
+    alert('zxc')
   })
 
   /**

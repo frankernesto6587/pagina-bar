@@ -35,7 +35,7 @@ const Menu = () => {
           <div className="row menu-container" data-aos="fade-up" data-aos-delay="200">
             {
               data.categorias[3].productos.map((producto)=>{
-                return <Producto producto={producto}/>
+                return <Producto key={producto.id} producto={producto}/>
               })
             }
 

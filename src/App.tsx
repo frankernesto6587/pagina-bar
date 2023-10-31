@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import "../public/assets/vendor/aos/aos.css";
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -20,7 +19,6 @@ function App() {
       const selectTopbar = document.querySelector('#topbar');
 
       if (selectHeader) {
-        console.log(window.scrollY + 'px');
         if (window.scrollY > 100) {
           selectHeader.classList.add('header-scrolled');
           if (selectTopbar) {

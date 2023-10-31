@@ -26,6 +26,7 @@ export const Contact = () => {
                             </p>
                         </div>
                         <div className="email">
+                            
                             <i className="bi bi-envelope"></i>
                             <h4>Email:</h4>
                             <p>monarcabar@gmail.com</p>
